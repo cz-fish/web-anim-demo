@@ -1,6 +1,3 @@
-//import * as THREE from "./js/three.module.js";
-//import { VertexNormalsHelper } from './js/VertexNormalsHelper.js';
-
 let materials = {};
 let triangles = {};
 let lights = {};
@@ -67,8 +64,6 @@ function make_triangle(materials) {
     
     var triMesh = new THREE.Mesh(geom, materials.green /*basic*/);
 
-    //var helper = new VertexNormalsHelper(triMesh, 2, 0xff0000, 1);
-    //scene.add(helper);
     return triMesh;
 }
 
@@ -135,6 +130,4 @@ function setup() {
 }
 
 setup();
-
-//export {setup};
 
